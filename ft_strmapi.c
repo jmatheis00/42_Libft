@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 14:51:40 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/19 18:24:01 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:56:16 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// applies function 'f' to each character of 's'
+// with an additional parameter representing the index
+// of the character in the string
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
@@ -31,9 +34,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	substr[i] = '\0';
 	return (substr);
 }
-
-// applies the function f to each character of the string 's'
-// & passing its index as first argument to create a new string (with malloc)
-//s = string on which to iterate
-// f = the function to apply to each character
-//return: the string created from the successive applications of 'f'

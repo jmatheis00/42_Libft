@@ -6,12 +6,13 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:31:00 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/08/06 12:18:43 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:45:55 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// concatenating 's1' and 's2' in a new string, using malloc
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*concat_str;
@@ -34,8 +35,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (concat_str);
 }
 
-//concatenating two strings (s1 & s2) in a new strings
-//reserving the storage with malloc
 /*
 int	main(void)
 {

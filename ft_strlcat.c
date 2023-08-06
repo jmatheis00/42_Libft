@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 17:17:47 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/19 19:51:07 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:51:04 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// concatenates 'src' to the end of 'dst',
+// not longer than 'dstsize' (including \0)
+// returns length of final string with no size restrictions
+// stops appending chars from 'src' when 'dst' buffer
+// reaches dstsize
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	counter;
@@ -38,9 +43,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (length_src + dstsize);
 }
-
-//adding src to the end of dst
-//returning source length + dstsize
-//if dstsize is bigger than dst length -> returning src + dst length
-//(number of bytes needed to store the entire string)
-//counter2 must be bigger than counter --> space

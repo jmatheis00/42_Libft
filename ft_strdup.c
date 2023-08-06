@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 11:30:07 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/19 20:03:02 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:43:26 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// duplicates 's1' in a new memory block & returns it
 char	*ft_strdup(const char *s1)
 {
 	char	*s2;
@@ -25,8 +26,3 @@ char	*ft_strdup(const char *s1)
 	test = (char *)ft_memcpy(s2, s1, len);
 	return (test);
 }
-
-//allocates memory for a copy of s1
-//copies s1 and returns a pointer to it
-//memcpy copies len bytes from memory area src to dst
-//memcpy returns original value of dst

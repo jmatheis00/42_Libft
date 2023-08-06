@@ -6,12 +6,14 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 14:56:37 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:41:06 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:53:39 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// copies 'src' to 'dst' up to a maximum of dstsize
+// returns length of 'src'
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	counter;
@@ -35,10 +37,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (length);
 }
 
-//copies the string from src to dst (up to dstsize - 1 chars)
-//copying src in dest & overwriting content of dst
-//if dstsize is smaller/equal to src length -> -1 nullterminating
-//returning length of the source
 /*
 int	main(void)
 {
