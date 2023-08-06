@@ -8,7 +8,7 @@ Building this adaptable toolbox establishes a solid foundation and provides supp
 1. clone this repository and `cd` into it:
 
 ```zsh
-git clone [https://github.com/jmatheis00/42_Libft.git] && cd 42_Libft
+git clone https://github.com/jmatheis00/42_Libft.git && cd 42_Libft
 ```
 
 2. Compile the library using make (without bonus part) or make bonus (with bonuse functions):
