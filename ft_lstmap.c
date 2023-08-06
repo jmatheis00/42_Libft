@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 17:36:14 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 16:21:16 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:36:06 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// returns a new list that applied function 'f' on content
+// of each 'lst'node, 'del' deletes content a node if needed
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
@@ -38,7 +40,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new->next = NULL;
 	return (store);
 }
-
-//iterates lst & applies f on content of each node
-//creates a new list with successive applications of f
-//del used to delete content of a node if needed

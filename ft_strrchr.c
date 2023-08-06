@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 15:32:48 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/19 18:20:35 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:23:30 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//searching for last occurence of 'c' in 's'
+//if 'c' is found, returns 's' from 'c' until end
 char	*ft_strrchr(const char *s, int c)
 {
 	int		length;
@@ -22,16 +24,12 @@ char	*ft_strrchr(const char *s, int c)
 	while (length >= 0)
 	{
 		if (s[length] == c2)
-		{
 			return ((char *)s + (length));
-		}
 		length--;
 	}
 	return (0);
 }
 
-//searching for last occurence of c in the string
-//if c is found it returns string from & incl. c
 /*
 #include <stdio.h>
 #include <string.h>

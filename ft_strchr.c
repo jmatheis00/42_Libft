@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 16:00:13 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/25 18:37:33 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:18:22 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// searching for 'c' in 's'
+// returns 's' from 'c' to end
+// can find null termination
 char	*ft_strchr(const	char *s, int c)
 {
 	int		length;
@@ -22,17 +25,12 @@ char	*ft_strchr(const	char *s, int c)
 	while (s[length] != c2)
 	{
 		if (s[length] == '\0')
-		{
 			return (0);
-		}
 		length++;
 	}
 	return ((char *)s + length);
 }
 
-//searching for a character in s
-//if found returning the char + rest of string
-//can find null terminator
 /*
 #include <stdio.h>
 #include <string.h>

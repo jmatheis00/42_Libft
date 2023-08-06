@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 20:34:42 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/03/28 16:04:16 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:27:10 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
 		return (c - 32);
-	}
 	return (c);
 }
 

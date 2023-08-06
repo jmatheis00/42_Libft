@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 15:06:35 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 16:11:09 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:05:13 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,14 @@ char	*ft_itoa(int n)
 	return (newstr);
 }
 
-// n = integer to convert to string
-// negative numbers must be handled
-/* #include <limits.h>
+/*
+#include <limits.h>
+
 int	main(void)
 {
 	int	n;
 
 	n = INT_MIN;
 	printf("String: %s\n", ft_itoa(n));
-} */
+}
+*/

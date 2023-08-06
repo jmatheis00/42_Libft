@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 17:31:12 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/21 17:20:01 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:06:43 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// adding node 'new' to end of list lst
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
@@ -25,6 +26,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp->next = new;
 	}
 }
-
-//adding node new to end of list
-//lst = address of a pointer to 1.link of list

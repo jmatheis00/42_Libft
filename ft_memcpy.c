@@ -3,15 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:04:28 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:39:23 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:13:37 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+copies 'n' bytes from memory area 'src' to memory area 'dst'
+/save to use when overlapping, memcpy doesn't use a buffer
+*/
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*dst2;
@@ -31,7 +35,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst2);
 }
 
-//copies n bytes from memory area src to memory area dst
 /*
 #include <string.h>
 #include <stdio.h>
@@ -48,8 +51,4 @@ int	main(void)
 	printf("\nft_memcpy_ex1_ex2 %s", z);
 	return (0);
 }
-
-//memmove overlaps (copies source to buffer and moves this to the dest) 
-//--> save to use when overlapping
-//memcpy doesn't use a buffer
 */

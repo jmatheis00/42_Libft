@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:31:00 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/19 17:07:27 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:18:43 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	i = 0;
 	while (s1[j] != '\0')
-	{
 		concat_str[i++] = s1[j++];
-	}
 	j = 0;
 	while (s2[j] != '\0')
-	{
 		concat_str[i++] = s2[j++];
-	}
 	concat_str[i] = '\0';
 	return (concat_str);
 }

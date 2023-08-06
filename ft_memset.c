@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 14:07:52 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:36:54 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:14:17 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// writes 'len' bytes of value 'c' to 'b'
 void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*test;
@@ -27,7 +28,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (test);
 }
 
-//writes len bytes of value c to string b
 /*
 #include <stddef.h>
 #include <stdio.h>

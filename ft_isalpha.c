@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 18:03:52 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/03/28 14:46:12 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:03:02 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,11 @@
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
 		return (1);
-	}
 	return (0);
 }
 
 /*
-#include <unistd.h>
 #include <stdio.h>
 #include <ctype.h>
 

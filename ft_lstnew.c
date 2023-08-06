@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 14:01:53 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:45:49 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:36:43 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// returns new node created with 'content'
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*temp;
@@ -24,10 +25,8 @@ t_list	*ft_lstnew(void *content)
 	return (temp);
 }
 
-//content = content to create the node with
-//returning the new node
-//variable next is initialized to NULL 
-/* int main (void)
+/*
+int main (void)
 {
 	t_list *list;
 
@@ -39,4 +38,5 @@ t_list	*ft_lstnew(void *content)
 
 	print_list(list);
 	return (0);
-} */
+}
+*/

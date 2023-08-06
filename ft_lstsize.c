@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 16:40:57 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:44:44 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:08:24 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// returns length of 'lst'
 int	ft_lstsize(t_list *lst)
 {
 	int	counter;
@@ -26,6 +27,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (counter);
 }
-
-//returns length of list
-//counts nodes in a list

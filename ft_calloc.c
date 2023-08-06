@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 13:38:06 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/26 14:08:00 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:03:47 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,24 +19,19 @@ void	*ft_calloc(size_t count, size_t size)
 	if (size != 0 && (18446744073709551615UL / size < count))
 		return (NULL);
 	test = malloc(count * size);
-	if (test == 0)
-		return (0);
+	if (test == NULL)
+		return (NULL);
 	ft_bzero(test, count * size);
 	return (test);
 }
 
-/* #include <stdio.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char const *argv[])
 {
 	printf("%p\n", calloc(0,1));
 	printf("%p\n", ft_calloc(0,1));
 	return 0;
-} */
-
-//works only until MAX value of size_t
-//malloc reserves storage at heap
-//calloc sets allocated memory to zero
-//count = Anzahl der Speicherbloecke
-// size = groesse eines einzelnen Speicherblocks
-//size * count can only be size max
+}
+*/

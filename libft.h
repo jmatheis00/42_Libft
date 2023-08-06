@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:46:26 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/21 17:20:10 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:28:54 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+/*********************
+ *	 MANDATORY PART	 *
+ *********************/
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -51,7 +55,9 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-//BONUS PART
+/*********************
+ *	  BONUS PART	 *
+ *********************/
 
 typedef struct s_list
 {

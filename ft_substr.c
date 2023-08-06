@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 10:44:51 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/13 21:47:49 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:26:37 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// create substring of 's' from 'start' with size of 'len'
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
@@ -39,7 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 
-//creating a substr with given start and length
 /*
 int main(void)
 {

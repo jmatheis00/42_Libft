@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 14:07:01 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:35:43 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:17:24 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//counting the words to reserve the storage with malloc
+// counting words to reserve the required memory with malloc
 static size_t	wordcounter(char const *s, char c)
 {
 	size_t	i;
@@ -45,7 +45,7 @@ static size_t	endsofsubs(char const *s, char c, size_t start)
 		return (ft_strchr(s + start, c) - &s[start]);
 }
 
-//freeing the buffer
+//freeing the buffer in case of error
 static char	**bufferfree(char **buffer)
 {
 	size_t	i;

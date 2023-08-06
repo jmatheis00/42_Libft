@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 20:50:23 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/03/28 16:08:29 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:27:02 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (c + 32);
-	}
 	return (c);
 }
 

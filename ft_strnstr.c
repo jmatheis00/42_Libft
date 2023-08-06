@@ -6,12 +6,14 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 10:09:41 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:41:15 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:22:40 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// find 'needle' in 'haystack' until size 'len'
+// if found, returns 'haystack' from 'needle' until end
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*test1;
@@ -39,11 +41,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-//len gives us the part where needle is searched in haystack
-//if completely found, return needle + rest of string
-//if there is no needle, return the whole haystack string
-//if not found return NULL
-/* #include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
@@ -57,4 +56,5 @@ int	main(void)
 	printf("\nSTRNSTR");
 	printf("\nstrnstr: %s", strnstr (ex1, ex2, len));
 	printf("\nft_strnstr: %s\n", z);
-} */
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 19:10:48 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/03/28 16:23:05 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:04:19 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,11 @@
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c < 127)
-	{
 		return (1);
-	}
 	return (0);
 }
 
 /*
-#include <unistd.h>
 #include <stdio.h>
 #include <ctype.h>
 

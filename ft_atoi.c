@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 10:46:00 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:58:00 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:31:43 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\v'
 		|| str[i] == '\f' || str[i] == '\t' || str[i] == '\r')
-	{
 		i++;
-	}
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
@@ -40,9 +38,6 @@ int	ft_atoi(const char *str)
 	return (numb * sign);
 }
 
-//space, newline, tabs, space, carriage return, v = feed
-// 48 ascii value of 0
-//skipping spaces, skipping sign + multiply it at the end
 /*
 int	main(void)
 {

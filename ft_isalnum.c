@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 18:57:19 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/13 21:40:08 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:03:44 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,11 @@ int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
 		|| (c >= '0' && c <= '9'))
-	{
 		return (1);
-	}
 	return (0);
 }
 
-//is alpha or is digit is true
 /*
-#include <unistd.h>
 #include <stdio.h>
 #include <ctype.h>
 

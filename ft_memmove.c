@@ -3,15 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 14:00:23 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/20 13:42:40 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:12:37 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+copies n bytes from memory area src to memory area dest. 
+The memory areas may overlap
+*/
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char		*dst2;
@@ -38,35 +42,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst2);
 }
-
-//copies n bytes from memory area src to memory area dest. 
-//The memory areas may overlap
-/* void	*ft_memmove(void *dst, const void *src, size_t len)
-{
-	size_t	counter;
-
-	counter = 0;
-	if (!dst && !src)
-		return (0);
-	if ((size_t)dst - (size_t)src < len)
-	{
-		counter = len - 1;
-		while (counter < len)
-		{
-			((unsigned char *)dst)[counter] = ((unsigned char *)src)[counter];
-			counter--;
-		}
-	}
-	else
-	{
-		while (counter < len)
-		{
-			((unsigned char *)dst)[counter] = ((unsigned char *)src)[counter];
-			counter++;
-		}
-	}
-	return (dst);
-} */
 
 /*
 #include <string.h>

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juliama <juliama@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 14:23:05 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/13 21:38:36 by juliama          ###   ########.fr       */
+/*   Updated: 2023/08/06 12:03:49 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	*ft_bzero(void *b, size_t n)
 	return (test);
 }
 
-//writes n zeroes to the string
 /*
 #include <stddef.h>
 #include <stdio.h>
@@ -35,9 +34,7 @@ void	*ft_bzero(void *b, size_t n)
 int	main(void)
 {
 	char	ex3[] = "hello";
-	size_t	len;
-
-	len = 5;
+	size_t	len = 5;
 	printf("\nft_bzero %s", ft_bzero(ex3, len));
 	printf("\nbzero %s", bzero(ex3, len));
 	return (0);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmatheis <jmatheis@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 18:25:27 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/04/06 12:40:28 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/08/06 12:10:17 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (test1[i] != test2[i])
-		{
 			return (test1[i] - test2[i]);
-		}
 		i++;
 	}
 	return (0);
