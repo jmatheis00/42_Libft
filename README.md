@@ -1,8 +1,6 @@
 # 42_Libft
->The "Libft" project at 42 programming school challenged me to create a library of essential function.
-It involved recreating standard C language functions,improving memory management and allocation skills.
-Building this library deepend the understanding of the C language and the complexities of implementing a Makefile.
-Building this adaptable toolbox establishes a solid foundation and provides support for future projects.
+>The "Libft" project at 42 programming school is about recoding a few functions of the C standard library as well as some other utility functions that will be used during the whole cursus.
+It involvs improving memory management, allocation skills and understanding the complexities of implementing a Makefile. Building this adaptable toolbox establishes a solid foundation and provides support for future projects.
 
 ### Usage
 1. clone this repository and `cd` into it:
