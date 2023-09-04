@@ -6,7 +6,7 @@
 #    By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/08 14:02:01 by jmatheis          #+#    #+#              #
-#    Updated: 2023/08/06 12:31:31 by jmatheis         ###   ########.fr        #
+#    Updated: 2023/09/04 17:53:35 by jmatheis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,8 +59,14 @@ BONUSPART = 	ft_lstnew.c \
 				ft_lstiter.c \
 				ft_lstmap.c
 
-mandatory = $(MANDATORYPART:.c=.o)
-bonus = $(BONUSPART:.c=.o)
+HEADER = libft.h
+
+M_SRCS = $(addprefix ./sources/mandatory/, $(MANDATORYPART))
+B_SRCS = $(addprefix ./sources/bonus/, $(BONUSPART))
+M_HEADER = $(addprefix ./includes/, $(HEADER))
+
+mandatory = $(M_SRCS:%.c=%.o)
+bonus = $(B_SRCS:%.c=%.o)
 
 # ************* #
 #     RULES     #
@@ -76,7 +82,8 @@ bonus: $(mandatory) $(bonus)
 	$(CC) $(CFLAGS) -c $^ -o $@
 	
 clean:
-	rm -f *.o
+	rm -f $(mandatory)
+	rm -f $(bonus)
 
 fclean: clean
 	rm -f $(NAME)
